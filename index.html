@@ -9,6 +9,11 @@
 </head>
 <body>
 
+    <div id="nav" class="nav">
+        <img src="netflix-images/netflix-logo.png" alt="" class="nav-logo"/>
+        <img src="netflix-images/netflix-avatar.png" alt="" class="nav-avatar">        
+    </div>
+
     <!-- header -->
     <header>
     <div class="banner">
@@ -233,6 +238,20 @@
     
             </div>
     </div>
+
+    <script>
+        
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if(window.scrollY >= 100) {
+                nav.classList.add('nav__black');
+            }else {
+                nav.classList.remove('nav__black');
+            }
+        });
+
+    </script>
     
     
 </body>
